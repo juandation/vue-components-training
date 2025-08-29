@@ -58,9 +58,9 @@ const formattedBirthDate = computed(() => {
 
 const handleImageError = (event) => {
   console.warn("Failed to load profile image:", props.picture);
-  // Set a fallback placeholder image when the original image fails to load
+
   event.target.src = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE1MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9Ijc1IiBjeT0iNjAiIHI9IjI1IiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik0zMCAxNjBDMzAgMTM1IDUwIDExNSA3NSAxMTVTMTIwIDEzNSAxMjAgMTYwVjE4MEgzMFYxNjBaIiBmaWxsPSIjOUNBM0FGIi8+Cjwvc3ZnPgo=";
-  // Remove the error event listener to prevent infinite loops
+  
   event.target.onerror = null;
 };
 </script>
