@@ -30,5 +30,13 @@ export default {
   font-size: 1.2em;
   font-weight: bold;
   padding: 0.5em;
+  background-color: white;
+  color: black;
+  border: 2px solid #333;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+  min-width: 50px;
+  text-align: center;
 }
 </style>
